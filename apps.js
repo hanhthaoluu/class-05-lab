@@ -26,9 +26,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-
+function multiply(firstNumber, secondNumber) {
+  var product = firstNumber * secondNumber;
+  var arrayProduct = [product, "The product of " + firstNumber + " and " + secondNumber " is " + product + "."];
+  console.log(arrayProduct);
+  return arrayProduct;
+}
 // Here is the test for multiply(); uncomment it to run it
-//testMultiply(4,7);
+testMultiply(4,7);
 
 // Once you get the test passing, do an a-c-p cycle.
 
