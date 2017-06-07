@@ -48,7 +48,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(firstNumber, secondNumber, thirdNumber) {
   var addition = firstNumber + secondNumber + thirdNumber;
   var product = firstNumber * secondNumber * thirdNumber;
-  var array = [addition, product, "4 and 7 and 5 sum to 16.", "The product of 4 and 7 and 5 is 140."];
+  var array = [addition, product, firstNumber + " and " + secondNumber + " and " + thirdNumber + " sum to " + addition + ".", "The product of " + firstNumber + " and " + secondNumber + " and " + thirdNumber + " is " + product + "."];
   console.log(array);
   return array;
 }
@@ -64,10 +64,17 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-//testArray = [2,3,4];
+var numbersArray = [2,3,4];
+function sumArray(numbersArray){
+  var sum = numbersArray[0] + numbersArray[1] + numbersArray[2];
+  var array = [sum, numbersArray + " was passed in as an array of numbers, and " + sum + " is their sum."]
+  console.log(array);
+  return array;
+}
+testArray = [2,3,4];
 
 // Here is the test for sumArray(); uncomment it to run it
-//testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle.
 
