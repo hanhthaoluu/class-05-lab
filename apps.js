@@ -67,7 +67,7 @@ Test this function by hand in the console to get it working, and when you think 
 var numbersArray = [2,3,4];
 function sumArray(numbersArray){
   var sum = numbersArray[0] + numbersArray[1] + numbersArray[2];
-  var array = [sum, "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
+  var array = [sum, numbersArray + " was passed in as an array of numbers, and " + sum + " is their sum."]
   console.log(array);
   return array;
 }
